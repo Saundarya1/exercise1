@@ -1,0 +1,93 @@
+//DESKTOP
+
+.swiper-box {
+
+    p {
+        margin-bottom: 32px;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 24px;
+        color: white;
+    }
+
+    a {
+        color: white;
+    }
+
+
+
+    .swiper-box_top-section {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+
+        .swiper-box_movie-section {
+            width: 400px;
+        }
+
+        .swiper-box_link {
+            letter-spacing: 0.02em;
+            text-decoration: underline;
+            color: white;
+            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1700px) {
+    .swiper-box_link{
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .swiper-box_link{
+        margin-right: 35px;
+    }
+}
+
+//TABLET
+
+@media screen and (max-width: 1200px) {
+   .swiper-box_link{
+    margin-right: 30px;
+   }
+}
+
+
+//MOBILE
+
+@media screen and (max-width: 769px) {
+
+    .swiper-box {
+        p {
+            margin-bottom: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .swiper-box_movie-section {
+
+        max-width: 130px;
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .swiper-box_link{
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .swiper-box_link{
+        margin-left: 50px;
+        max-width: 80px;
+    }
+}

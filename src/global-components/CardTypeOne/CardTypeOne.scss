@@ -1,0 +1,22 @@
+//DESKTOP / TABLET
+
+.card-type-one {
+    img {
+        width: 256px;
+        height: 164px;
+        border-radius: 16px;
+    }
+}
+
+
+//MOBILE
+
+@media screen and (max-width: 769px) {
+
+    .card-type-one {
+        img {
+            width: 218px;
+            height: 140px;
+        }
+    }
+}

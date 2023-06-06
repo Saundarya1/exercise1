@@ -1,0 +1,226 @@
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary);
+  background-color: black;
+}
+
+p {}
+
+.backgroundImage {
+  background-image: url('@/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  height: 810px;
+  width: 100%;
+  background-position: center top;
+  position: absolute;
+  z-index: -1;
+}
+
+.swiper-button-prev{
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 50px;
+    margin-left: 26px;
+    margin-bottom: -25px;
+}
+.swiper-button-prev::after{
+  margin-top: -3px;
+  margin-left: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.swiper-button-next{
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 50px;
+  margin-right: 26px;
+  margin-bottom: -25px;
+}
+.swiper-button-next:after{
+  margin-top: -3px;
+  margin-left: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+
+//DESKTOP
+
+
+//desktop-background&gradients
+
+.top-gradient {
+  margin-top: 0px;
+  height: 231px;
+  position: relative;
+  z-index: -1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bot-gradient {
+  height: 231px;
+  position: relative;
+  z-index: -1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+// desktop-swipers
+
+.swiper-box-first {
+  margin-left: 47px;
+  margin-top: 60px;
+  p{
+    letter-spacing: 0.04em;
+  }
+}
+
+.swiper-box-second {
+  margin-left: 56px;
+  margin-top: 42px;
+  p{
+    letter-spacing: 0.04em;
+  }
+}
+
+.swiper-box-third {
+  margin-left: 56px;
+  margin-top: 37px;
+  p{
+    letter-spacing: 0.04em;
+  }
+}
+
+.swiper-box-fourth {
+  margin-left: 59px;
+  margin-top: 36px;
+  p{
+    letter-spacing: 0.010em;
+  }
+}
+
+
+.swiper-box-fifth {
+  margin-left: 59px;
+  margin-top: 37px;
+  p{
+    letter-spacing: 0.010em;
+  }
+}
+
+
+
+// TABLET
+
+
+
+//tablet-background&gradients
+
+@media screen and (min-width: 769px) {
+
+ .backgroundImage {
+  background-size: cover;
+  height: 810px;
+  margin-left: 0px;
+}
+
+}
+
+// tablet-swipers
+
+@media screen and (max-width: 1200px) {
+
+  .swiper-box-first {
+    margin-left: 40px;
+    margin-top: 65px;
+  }
+
+  .swiper-box-second {
+    margin-left: 40px;
+    margin-top: 36px;
+  }
+
+  .swiper-box-third {
+    margin-left: 40px;
+  }
+
+  .swiper-box-fourth {
+    margin-left: 40px;
+    margin-top: 38px;
+  }
+
+  .swiper-box-fifth {
+    margin-left: 40px;
+    margin-top: 36px;
+  }
+
+}
+
+
+//MOBILE
+
+
+//mobile-background&gradients
+
+@media screen and (max-width: 768px) {
+  .backgroundImage {
+    background-size: 250%;
+    height: 532px;
+    margin-top: 4px;
+    margin-left: 0px;
+  }
+
+  .backgroundImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+//mobile-swipers
+
+@media screen and (max-width: 769px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-box-first {
+    margin-left: 16px;
+    margin-top: 36px;
+  }
+
+  .swiper-box-second {
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+  .swiper-box-third {
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+  .swiper-box-fourth {
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+  .swiper-box-fifth {
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+}

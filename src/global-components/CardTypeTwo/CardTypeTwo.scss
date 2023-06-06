@@ -1,0 +1,48 @@
+//DESKTOP / TABLET
+
+.card-type-two {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    & &_movie-img {
+        img {
+            margin-left: 32px;
+            width: 180px;
+            height: 224px;
+            border-radius: 16px;
+        }
+    }
+
+    & &_number-img {
+
+        img {
+            height: 84px;
+        }
+    }
+}
+
+//MOBILE
+
+@media screen and (max-width: 769px) {
+
+    .card-type-two {
+
+        & &_movie-img {
+            img {
+                width: 151px;
+                height: 188px;
+                margin-left: 18px;
+            }
+        }
+
+        & &_number-img {
+
+            img {
+                height: 58px;
+            }
+        }
+    }
+
+}

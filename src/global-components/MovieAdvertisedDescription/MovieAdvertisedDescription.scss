@@ -1,0 +1,137 @@
+//DESKTOP
+
+.movie-advertised-description {
+    margin-top: 130px;
+    margin-left: 64px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        margin-left: 0%;
+        margin-top: 20px;
+        width: 549px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: white;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+    }
+
+
+    & &_top-ten {
+        width: max-content;
+        max-height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+        }
+
+        p {
+            margin-top: 25px;
+            margin-left: 16px;
+            font-size: 24px;
+            font-weight: 500;
+            font-style: bold;
+            line-height: 20px;
+            letter-spacing: -0.025em;
+        }
+    }
+
+
+
+    & &_movie-title {
+        img {
+            margin-top: 24px;
+            width: 650px;
+            height: 172px;
+        }
+    }
+
+}
+
+//TABLET
+
+@media screen and (max-width: 1200px) {
+    .movie-advertised-description {
+        margin-left: 40px;
+
+        & &_top-ten {
+            p {
+                margin-top: 25px;
+                margin-left: 16px;
+                line-height: 21px;
+                letter-spacing: -0.023em;
+            }
+        }
+    
+        & &_movie-title {
+            img {
+                width: 425px;
+                height: 112px;
+            }
+        }
+    }
+
+ 
+}
+
+//MOBILE
+
+@media screen and (max-width: 768px) {
+    .movie-advertised-description {
+        width: 95%;
+        margin-left: 16px;
+        margin-top: 213px;
+
+        p {
+            width: 97%;
+            margin-top: 12px;
+            font-size: 14px;
+            letter-spacing: -0.009em;
+            line-height: 120%;
+        }
+
+        & &_top-ten {
+            p {
+                width: 100%;
+                margin-left: 17px;
+                margin-top: 16px;
+                line-height: 22px;
+                font-size: 15px;
+                letter-spacing: 0.022em;
+            }
+    
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 10px;
+            }
+        }
+    
+        & &_movie-title {
+            img {
+                width: 269px;
+                height: 70px;
+                margin-top: 12px;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 300px) {
+    .movie-advertised-description{
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+}

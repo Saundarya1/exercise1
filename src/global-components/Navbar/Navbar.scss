@@ -1,0 +1,36 @@
+//DESKTOP
+
+.navbar {
+    position: relative;
+    z-index: 1;
+    margin-top: 0%;
+    height: 64px;
+    background-color: transparent;
+
+    img {
+        margin-top: 24px;
+        margin-left: 64px;
+        width: 57px;
+        height: 16px;
+    }
+}
+
+//TABLET
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        img {
+            margin-left: 40px;
+        }
+    }
+}
+
+//MOBILE
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        img {
+            margin-left: 16px;
+        }
+    }
+}
